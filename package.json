@@ -4,8 +4,9 @@
   "description": "Training slides for 2023 Elixirconf",
   "main": "index.js",
   "scripts": {
-    "build": "marp index.md",
-    "start": "live-server .",
+    "start": "npm run watch & live-server .",
+    "watch": "marp --watch index.md -o index.html",
+    "build": "marp index.md -o index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

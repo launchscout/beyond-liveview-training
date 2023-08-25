@@ -1,0 +1,16 @@
+<html>
+
+<head>
+  <script>
+    class SayBoopElement extends HTMLElement {
+      connectedCallback() {
+        this.innerHTML = `Boop!`
+      }
+    }
+    customElements.define('say-boop', SayBoopElement);
+  </script>
+</head>
+<body>
+  <say-boop></say-boop>
+</body>
+</html>
