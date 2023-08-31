@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run watch & live-server .",
     "watch": "marp --watch index.md -o index.html",
+    "livestate:watch": "marp --watch live_state.md -o live_state.html",
     "build": "marp index.md -o index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
